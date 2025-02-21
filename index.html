@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realm of Shadows</title>
+    <style>
+        /* General Design */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #333, #660000);
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff0000;
+            text-shadow: 2px 2px 5px black;
+        }
+        nav {
+            background: #111;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff0000;
+        }
+        section {
+            padding: 20px;
+        }
+
+        /* The Shadow Section */
+        #shadow {
+            background: url('https://via.placeholder.com/1000x500?text=Shadowy+Background') no-repeat center center/cover;
+            color: #ff0000;
+            text-shadow: 2px 2px 5px black;
+            padding: 50px;
+        }
+        #shadow p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        /* Styling for the image in the shadow section */
+#shadow img {
+    max-width: 150px; /* Adjust the size of the image */
+    border: 2px solid #ff0000;
+    float: left; /* Make the text wrap around the image */
+    margin-right: 20px; /* Add space between the image and the text */
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+        /* Dark Store */
+        #dark-store {
+            background: #222;
+            padding: 40px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background: #111;
+            border: 2px solid #ff0000;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #ff0000;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .product-description {
+            font-size: 0.9em;
+            color: #ff6666;
+        }
+        .product button {
+            background: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+        .product button:hover {
+            background: #cc0000;
+        }
+
+        /* Dark Community */
+        #dark-community {
+            background: #333;
+            text-align: center;
+            padding: 40px;
+        }
+        #dark-community button {
+            background: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background 0.3s ease;
+        }
+        #dark-community button:hover {
+            background: #cc0000;
+        }
+
+        /* Contact Me */
+        #contact-me {
+            background: #444;
+            text-align: center;
+            padding: 40px;
+        }
+        #contact-me button {
+            background: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background 0.3s ease;
+        }
+        #contact-me button:hover {
+            background: #cc0000;
+        }
+
+        /* General Effects */
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .blinking {
+            animation: blink 1.5s infinite;
+        }
+        audio {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Sound -->
+    <audio autoplay loop>
+        <source src="https://www.dropbox.com/scl/fi/fsx650iw9bost0z8pu387/.mp3?rlkey=rirxljqgrignkcl7h6tzpt0kp&st=mbuzarum&dl=1" type="audio/mpeg">
+    </audio>
+    <header>
+        <h1>Realm of die</h1>
+    </header>
+    <nav>
+        <a href="#shadow">The Shadow</a>
+        <a href="#dark-store">Dark Store</a>
+        <a href="#dark-community">Dark Community</a>
+        <a href="#contact-me">Contact Me</a>
+    </nav>
+
+   <!-- The Shadow Section -->
+<section id="shadow">
+    <h2>The Publisher's Soul</h2>
+    <img src="https://www.dropbox.com/scl/fi/fc368qr74e7sw3iug2180/2025-02-06-20.05.56_3cd60340.jpg?rlkey=mqdc8e7110h844nnp6fd25dar&st=4cgng2cm&dl=1" alt="The Publisher">
+    <p class="blinking">"In the abyss of the unknown, truth does not whisper—it howls."</p>
+    <p class="deep-thought">
+        "Every shadow festers with secrets, every silence is a grave for screams unheard. I do not merely keep these tales—I bind them in blood and ink, sealing them within the pages of eternity."
+    </p>
+    <p>
+        There is no light, only the illusion of it. Every word is a ritual, every book a curse, every story a scar upon the soul. I do not create—I unearth. I do not write—I summon. The ink runs deeper than veins, and the paper thirsts more than flesh.
+
+        To read is to surrender, to understand is to decay. Turn the page if you dare, but know this: once seen, it cannot be unseen. Once known, it cannot be undone.
+        
+        Welcome to the archive of the forsaken.
+        Your name is already written here.
+    </p>
+</section>
+    <!-- Dark Store -->
+    <section id="dark-store">
+        <h2>Dark Store</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/3b3h8rfqwj2pv8x6b1dr6/2025-02-20-18.51.39_a0968a7a.jpg?rlkey=ygo75z9jo1b8ewg6938kntigc&st=taf01yhl&dl=1" alt="Cursed Knives">
+                <h3>Syringe of the Forgotten</h3>
+                <p class="product-description">A hollow needle filled with mystery. The dark fluid within pulses as if alive, eager to merge with a new host. A single injection could bring salvation—or an irreversible descent into madness.
+
+                    Effects:
+                    
+                    Enhances perception beyond mortal limits.
+                    Weakens the body while strengthening the mind.
+                    Side effects: Unknown. Proceed at your own risk.</p>
+                    <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/mou7eiitr520bf8sx7ynd/2025-02-20-18.51.39_54f6116a.jpg?rlkey=3zzd02abr677aofhg3zlz8u5s&st=qhgnqvhh&dl=1" alt="Demonic Candles">
+                <h3>Unknown Human Flesh</h3>
+                <p class="product-description">Freshly severed, its fibers still pulsate with fading warmth. Pale fat clings to dark muscle, and slow-dropping blood whispers of a life recently taken. A scent of iron and decay lingers, calling to those who dare.
+
+                    Uses:
+                    
+                    Sustenance for the forsaken.
+                    Ritual material for forbidden rites.
+                    Warning: Consumption may leave more than just a mark on the body…
+                    
+                    </p>
+                    <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/nmsrpsvf4xca0fq8d1x2z/2025-02-20-18.51.38_f902e6d4.jpg?rlkey=6xq5qthkenbr1cr8t1ybkzb5q&st=0e1svxa8&dl=1" alt="Terrifying Statues">
+                <h3>Blood Energy Potion</h3>
+                <p class="product-description">A dark elixir crafted for those who dwell in the shadows. Rich in vitality, this potion mimics the essence of real blood, offering an energy surge to sustain the eternal hunger.
+
+                    Uses:
+                    
+                    Restores stamina and enhances nocturnal abilities.
+                    A preferred sustenance for creatures of the night.
+                    Keeps the thirst at bay… but only for a while.
+                    </p>
+                    <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/742sc9nare3b621xfsz4t/2025-02-20-18.47.23_d6958ba0.jpg?rlkey=96zqigo0lzvxojs3srwc7u162&st=ka211szw&dl=1" alt="Glass Eyes">
+                <h3>Elixir of the Forgotten</h3>
+                <p class="product-description">A forbidden concoction, swirling with the essence of those who dared to reach beyond mortality. One sip and your fate is sealed—either enlightenment or eternal oblivion.
+
+                    Uses:
+                    
+                    Grants knowledge beyond the veil, at a terrible cost.
+                    A final solution for those who seek release from the burden of existence.
+                    Enhances the body… but only until the soul rots away.</p>
+                    <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/ybprtct6a6yw4upl7r5ca/2025-02-20-18.47.06_26f5f533.jpg?rlkey=5ovhi91vxqzjhehb17z8r7d9i&st=qo27xhy1&dl=1" alt="Haunted Books">
+                <h3>The Watcher’s Remnant</h3>
+                <p class="product-description">Once a window to a soul, now a silent witness to forgotten horrors. It sees beyond time, into realms where nightmares are born.
+
+                    Usage:
+                    
+                    Glimpse into the void and uncover hidden truths.
+                    Track the unseen as it follows you in the dark.
+                    Exchange your sight for knowledge no mortal should bear.</p>
+                    <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/fpzynhyw0uw5kpdztvr0n/2025-02-20-18.47.13_4e3cf31d.jpg?rlkey=ex9osj8h0taynj0ee3ca6nn3f&st=gvqo6uku&dl=1" alt="Black Orbs">
+                <h3>String of Shadows</h3>
+                <p class="product-description">Its melodies do not play; they whisper, echoing lost dreams and unfinished tunes. In your hands, silence becomes a scream, and light turns into shadow.
+
+                    Usage:
+                    
+                    Play the melodies of the final dusk.
+                    Revive the echoes of voices unheard for centuries.
+                    Tame the darkness with forgotten chords.</p>
+                    <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/bn3dd07kyosrrwbghg525/2025-02-20-19.21.25_8df4e027.jpg?rlkey=pg62u0snqiu5s8sppwdzm0pmz&st=ti90m89z&dl=1" alt="Shadow Cloak">
+                <h3>The Forsaken Cleaver</h3>
+                <p class="product-description">A relic of forgotten battles, its handle whispers of long-dead hands. The rusted edge still thirsts for use, yet it is doomed to linger in silence—waiting, watching.
+
+                    Purpose:
+                    
+                    For collectors of cursed artifacts.
+                    For those who wish to hold history’s weight in their hands.
+                    For the ones who understand that some tools remember their past… and demand a future.</p>
+                    <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/g11mbzcbwqujhsqjp4vfs/2025-02-20-19.21.25_f38347c5.jpg?rlkey=ceo8gzm4vm2f8y0wftyivjbsk&st=ubyf8ubw&dl=1" alt="Blood Amulet">
+                <h3>Guardian of Digital Shadows</h3>
+                <p class="product-description">Watches over your cursed data, warning of unseen threats.
+                    Hides in the corners of your screen, appearing only when solitude becomes unbearable.
+                    Sends encrypted messages from the void—no one knows their origin.
+                    Slowly decays the longer it lingers, until it vanishes… leaving behind an unerasable digital scar.</p>
+                    <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/do30m39pov6khpaatf5ju/2025-02-20-19.21.25_d4491ae8.jpg?rlkey=ecgfyl941mqcymrsovrac0qou&st=0ggzjemg&dl=1" alt="Soul Candle">
+                <h3>PhantomFax X-666</h3>
+                <p class="product-description">An abandoned fax machine pulsating with messages from the void, stained with cryptic marks and symbols from nowhere. It prints the shadows of American business—where deals are sealed in ink… or in blood.</p>
+                <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/rn8e8v8m71cu8zwcxt7ui/2025-02-20-19.21.25_95551989.jpg?rlkey=mj528wgt9k6yzvq32djy7iq46&st=g94s4agp&dl=1" alt="Nightmare Mask">
+                <h3>The Cursed Doll – Echo of Suffering</h3>
+                <p class="product-description">A stitched abomination, born from agony and betrayal. It whispers in the dark, carrying the grief of its creator, seeking a new soul to torment.</p>
+                <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/oj8olbw8o52pkc1237lm8/2025-02-20-19.21.25_c3a0402e.jpg?rlkey=212b8xcgapw77a6p8ngji5jur&st=t7jwa71q&dl=1" alt="Eternal Hourglass">
+                <h3>Blood Pact – The Mark of the Forsaken</h3>
+                <p class="product-description">A cursed sigil left by an unholy contract. Those who bear its touch are bound to a sinister fate, their souls claimed by an unknown force lurking in the abyss.</p>
+                <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/m3s8i5zv6wclfmxm31xjz/2025-02-20-19.21.25_05b94b53.jpg?rlkey=ydm8pe8ek0pdk2eh3wkctvvqd&st=1vfqxn6h&dl=1" alt="Whispering Idol">
+                <h3>Ace of the Abyss</h3>
+                <p class="product-description">A cursed playing card that shifts fate itself. Those who draw it may gain ultimate power—or lose their very soul to the void.</p>
+                <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/6q71qt9dt4xvf3azkp86z/2025-02-20-19.21.25_bd6c09d4.jpg?rlkey=lrtzg85e74jbc9ejt4ndenwkw&st=4b3xnu49&dl=1" alt="Void Mirror">
+                <h3>Melody of Doom – Symphony of the Damned</h3>
+                <p class="product-description">A cursed CD stained with blood, said to play melodies from the abyss. Those who listen may hear whispers from the void—or be dragged into an unknown fate.</p>
+                <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/wmpkajfndqnwt11b1kfnu/2025-02-20-22.02.23_4b73d073.jpg?rlkey=d9wojlfjujnhvcuyf6odkd9zh&st=64kb4z2f&dl=1" alt="Ghostly Vial">
+                <h3>Voidgate – Rift of the Forsaken</h3>
+                <p class="product-description">A cursed portal pulsing with eldritch energy, opening pathways to realms beyond mortal comprehension. Those who enter may never return—or emerge forever changed.</p>
+                <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.dropbox.com/scl/fi/qv6fymblisos6ryifx1c6/2025-02-20-22.02.24_1994716d.jpg?rlkey=4jvyd0r76yohkd48v00unv1cz&st=075z4hp8&dl=1" alt="Dark Crystal">
+                <h3>Umbraith – The Abyss Key</h3>
+                <p class="product-description">A forbidden artifact carved with ancient sigils, used to channel dark forces and pierce the veil of the unknown. It grants infernal insight—but at an ominous cost.</p>
+                <button onclick="playVideo(this)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <h2>⚠️ DISCLAIMER ⚠️</h2>
+ <pre>
+    <p class="product-description">
+        <b>
+    By purchasing from us, you acknowledge that you are prepared to face the unknown. 
+ These items are not mere novelties; they are remnants of something beyond comprehension. Whether relics of forgotten rituals, 
+ remnants of lost souls, or conduits to things that should remain buried, each piece carries a truth—terrible, beautiful, and inescapable.
+
+ We do not claim responsibility for what follows once these artifacts are in your possession. 
+ The whispers in the dark, the shifting shadows, the dreams that are not your own—these are not malfunctions or tricks of the mind.
+ You have invited something in, and it will not be ignored.
+
+ There is no "impossible." There is only what you are willing to see.
+
+ Items of Interest:
+   🩸 The Blood of the Nameless – A sealed vial, pulsing as if still connected to something… waiting.
+   👁 The Watcher’s Eye – Once it sees you, it never forgets. And neither will you.
+   📜 The Unwritten Oath – Words appear only when you are ready. Pray that you never are.
+   💀 The Hollowed Mask – Something used to wear it. Something still does.
+   🔮 The Fractured Soulstone – They say it holds a piece of someone. If you listen closely, you may hear them calling.
+
+You are not just purchasing an item. You are making a choice. Choose wisely. Or don’t. The result will be the same.
+    </b>
+</p>
+</pre>
+    <!-- Dark Community -->
+    <section id="dark-community">
+        <h2>die Community</h2>
+        <p>Join our  WhatsApp group die!</p>
+        <button onclick="window.open('https://chat.whatsapp.com/Fy54UcekOdrCYsYnEAOi4Y')">Join Now</button>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact-me">
+        <h2>Contact Me</h2>
+        <p>Do you dare to enter the hell with me?  WhatsApp...</p>
+        <button onclick="window.open('https://wa.me/201026001846')">Contact via WhatsApp</button>
+    </section>
+
+    <script>
+        function playVideo(button) {
+            const product = button.closest('.product');
+            const img = product.querySelector('img');
+            const videoUrl = 'https://www.dropbox.com/scl/fi/c6dvscmc992rsv9trnfx5/2025-02-20-23.26.28_e5a5cda9.mp4?rlkey=wlqg9wa8j7af4zhy94zkjhm4p&st=feyeyd75&dl=1';
+            const video = document.createElement('video');
+            video.src = videoUrl;
+            video.autoplay = true;
+            video.controls = false;
+            video.style.width = '100%';
+            video.style.height = 'auto';
+            video.style.borderRadius = '10px';
+            video.onended = function() {
+                product.replaceChild(img, video);
+            };
+            product.replaceChild(video, img);
+        }
+    </script>
+
+</body>
+</html>
